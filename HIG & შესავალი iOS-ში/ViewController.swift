@@ -20,12 +20,12 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        updateLabel()
+        updateLabelAndButton()
         updateTextFields()
     }
     
     //MARK: UI
-    func updateLabel() {
+    func updateLabelAndButton() {
         if modeSwitch.isOn {
             divisorOrMultipleLabel.text = "უმცირესი საერთო ჯერადი"
             calculateButton.tintColor = .red
@@ -60,7 +60,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func switchAction(_ sender: Any) {
-        updateLabel()
+        updateLabelAndButton()
     }
     
     //MARK: Logic
